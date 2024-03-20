@@ -31,6 +31,7 @@ class CharacterPage extends StatelessWidget {
                     title: Text('New Tab'),
                     onTap: () {
                       // TODO: Create new tab, move lower by 1.
+                      _showNewTabCreatedAlert(context);
                     },
                   ),
                 ],
@@ -71,4 +72,24 @@ class CharacterPage extends StatelessWidget {
       ),
     );
   }
+  void _showNewTabCreatedAlert(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text('Alert'),
+          content: Text('New tab created!'),
+          actions: <Widget>[
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: Text('OK'),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
 }
