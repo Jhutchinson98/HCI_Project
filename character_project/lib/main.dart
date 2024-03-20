@@ -123,22 +123,6 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  // Widget profilePic() {
-  //   return Container(
-  //     child: Column(children: [
-  //       SizedBox(height: 20),
-  //       CircleAvatar(
-  //         radius: 50,
-  //         backgroundColor: Colors.grey.shade200,
-  //         child: const CircleAvatar(
-  //           radius: 45,
-  //           //backgroundImage: AssetImage('assets/images/plant.jpg'),
-  //         ),
-  //       ),
-  //     ]),
-  //   );
-  // }
-
   Widget profilePic() {
   return GestureDetector(
     onTap: () {
@@ -157,7 +141,7 @@ class _MyHomePageState extends State<MyHomePage> {
             backgroundColor: Colors.grey.shade200,
             child: const CircleAvatar(
               radius: 45,
-              //backgroundImage: AssetImage('assets/images/plant.jpg'),
+              //backgroundImage: AssetImage('profiles/DD-Logo.png'),
             ),
           ),
         ],

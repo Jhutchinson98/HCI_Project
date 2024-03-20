@@ -7,7 +7,7 @@ class CharacterPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Character Page'),
+        title: Text('Character Name'),
       ),
       body: Center(
         child: Text('This is the Character Page'),
